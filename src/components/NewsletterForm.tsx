@@ -1,7 +1,3 @@
-function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-  console.log('SUBMIT CHAMADO') // ← adicione esta linha
-  e.preventDefault()
-
 'use client'
 import { useState } from 'react'
 
@@ -51,10 +47,7 @@ export default function NewsletterForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex flex-col gap-3 max-w-md mx-auto"
-    >
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 max-w-md mx-auto">
       <input
         type="text"
         placeholder="Seu nome"
