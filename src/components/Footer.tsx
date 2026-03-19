@@ -44,6 +44,7 @@ export default function Footer() {
             <h3 className="font-mono text-xs tracking-widest text-gold uppercase mb-5">Blog</h3>
             <ul className="space-y-2 mb-8">
               <li><Link href="/blog" className="text-sm text-ivory/60 hover:text-gold transition-colors">Todos os Artigos</Link></li>
+              <li><Link href="/biblioteca" className="text-sm text-ivory/60 hover:text-gold transition-colors">Biblioteca Jurídica</Link></li>
               <li><Link href="/sobre" className="text-sm text-ivory/60 hover:text-gold transition-colors">Sobre o LEXMETRIA</Link></li>
               <li><Link href="/#contato" className="text-sm text-ivory/60 hover:text-gold transition-colors">Solicitar Diagnóstico</Link></li>
             </ul>

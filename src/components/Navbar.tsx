@@ -49,6 +49,9 @@ export default function Navbar() {
             <Link href="/blog" className="font-mono text-xs tracking-widest text-ivory/70 uppercase hover:text-gold transition-colors">
               Artigos
             </Link>
+            <Link href="/biblioteca" className="font-mono text-xs tracking-widest text-ivory/70 uppercase hover:text-gold transition-colors">
+              Biblioteca
+            </Link>
             <Link href="/sobre" className="font-mono text-xs tracking-widest text-ivory/70 uppercase hover:text-gold transition-colors">
               Sobre
             </Link>
@@ -89,16 +92,9 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/blog" onClick={() => setMenuOpen(false)} className="block px-6 py-3 text-sm text-ivory/70 border-b border-gold/10">Todos os Artigos</Link>
+          <Link href="/biblioteca" onClick={() => setMenuOpen(false)} className="block px-6 py-3 text-sm text-ivory/70 border-b border-gold/10">Biblioteca</Link>
           <Link href="/sobre" onClick={() => setMenuOpen(false)} className="block px-6 py-3 text-sm text-ivory/70 border-b border-gold/10">Sobre</Link>
-          <a
-            href="https://www.instagram.com/lexmetria"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMenuOpen(false)}
-            className="block px-6 py-4 text-sm text-gold font-medium"
-          >
-            Contratar →
-          </a>
+          <a href="https://www.instagram.com/lexmetria" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="block px-6 py-4 text-sm text-gold font-medium">Contratar →</a>
         </div>
       )}
     </nav>
