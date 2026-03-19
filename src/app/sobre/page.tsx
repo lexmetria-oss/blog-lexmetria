@@ -84,6 +84,44 @@ export default function SobrePage() {
         </div>
       </div>
 
+      {/* Fundador */}
+      <div className="mb-16 border border-gold/20 bg-navy-mid p-8">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-6 h-px bg-gold" />
+          <span className="font-mono text-xs text-gold tracking-widest uppercase">Quem está por trás</span>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-8 items-start">
+          <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center">
+            <span className="font-serif text-2xl font-black text-gold">AI</span>
+          </div>
+          <div className="flex-1">
+            <h3 className="font-serif text-xl font-bold text-ivory mb-1">Adriano Israel</h3>
+            <p className="font-mono text-xs text-gold/70 uppercase tracking-widest mb-4">Fundador & Responsável pelo Blog LEXMETRIA</p>
+            <p className="text-sm text-ivory/60 leading-relaxed mb-6">
+              Especialista em conformidade jurídica e governança pública municipal, Adriano Israel fundou o LEXMETRIA com o objetivo de levar inteligência administrativa preventiva às Câmaras Municipais, Autarquias e Prefeituras do Brasil — antecipando riscos antes que os órgãos de controle o façam.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="mailto:lexmetria@gmail.com"
+                className="flex items-center gap-2 font-mono text-xs text-ivory/60 hover:text-gold transition-colors group"
+              >
+                <span className="w-6 h-6 border border-gold/30 group-hover:border-gold flex items-center justify-center text-xs transition-colors">✉</span>
+                lexmetria@gmail.com
+              </a>
+              <a
+                href="https://www.instagram.com/lexmetria"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 font-mono text-xs text-ivory/60 hover:text-gold transition-colors group"
+              >
+                <span className="w-6 h-6 border border-gold/30 group-hover:border-gold flex items-center justify-center text-xs transition-colors">◈</span>
+                @lexmetria
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="border border-gold bg-gold/5 p-8 text-center">
         <h2 className="font-serif text-2xl font-bold text-ivory mb-3">Solicite o Diagnóstico</h2>
