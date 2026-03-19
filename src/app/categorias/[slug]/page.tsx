@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import ArticleCard from '@/components/ArticleCard'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import ShareButtons from '@/components/ShareButtons'
 
 interface Props {
   params: { slug: string }
@@ -71,6 +72,8 @@ export default function CategoriaPage({ params }: Props) {
               <ArticleCard key={artigo.slug} artigo={artigo} />
             ))
           )}
+
+          <ShareButtons titulo={`${categoria.nome} — LEXMETRIA`} />
         </div>
 
         {/* Sidebar */}

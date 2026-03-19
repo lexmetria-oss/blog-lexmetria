@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import ArticleCard from '@/components/ArticleCard'
+import ShareButtons from '@/components/ShareButtons'
 
 interface Props {
   params: { slug: string }
@@ -96,6 +97,9 @@ export default function ArtigoPage({ params }: Props) {
               {artigo.conteudo}
             </ReactMarkdown>
           </div>
+
+          {/* Compartilhar */}
+          <ShareButtons titulo={artigo.titulo} />
 
           {/* Navegação entre artigos */}
           <div className="mt-16 pt-8 border-t border-gold/20 grid grid-cols-1 sm:grid-cols-2 gap-4">
