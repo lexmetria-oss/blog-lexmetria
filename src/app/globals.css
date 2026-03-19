@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --navy: #0A0F2C;
+  --navy-mid: #111936;
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --ivory: #F5F1E8;
+  --ivory-dim: #DDD8CB;
+  --teal: #1A6E73;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--navy);
+  color: var(--ivory);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-serif { font-family: 'Playfair Display', Georgia, serif; }
+.font-mono  { font-family: 'JetBrains Mono', monospace; }
+
+/* Prose article styles */
+.prose-lexmetria {
+  color: var(--ivory-dim);
+  line-height: 1.8;
+}
+.prose-lexmetria h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ivory);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+}
+.prose-lexmetria h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ivory);
+  margin: 2rem 0 0.75rem;
+}
+.prose-lexmetria p  { margin-bottom: 1.25rem; }
+.prose-lexmetria ul { list-style: none; padding: 0; margin-bottom: 1.5rem; }
+.prose-lexmetria ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  color: var(--ivory-dim);
+}
+.prose-lexmetria ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.8rem;
+}
+.prose-lexmetria ol { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.prose-lexmetria ol li { margin-bottom: 0.5rem; color: var(--ivory-dim); }
+.prose-lexmetria a  { color: var(--gold); text-decoration: underline; }
+.prose-lexmetria strong { color: var(--ivory); font-weight: 600; }
+.prose-lexmetria blockquote {
+  border-left: 3px solid var(--gold);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  color: var(--ivory);
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+}
+
+/* Grid lines background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Gold underline animation */
+.gold-link {
+  position: relative;
+  text-decoration: none;
+}
+.gold-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+.gold-link:hover::after { width: 100%; }
+
+/* Category badge */
+.category-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2px;
+}
