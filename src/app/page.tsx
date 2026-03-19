@@ -143,7 +143,7 @@ export default function Home() {
               </p>
               <div className="mb-4 p-3 border border-gold/20 bg-gold/5">
                 <div className="font-mono text-xs text-gold/60 uppercase tracking-widest mb-1">Câmaras Municipais</div>
-                <div className="font-serif text-xl font-bold text-gold">R$ 12.000</div>
+                <div className="font-serif text-xl font-bold text-gold">A partir de R$ 12.000</div>
                 <div className="font-mono text-xs text-ivory/40">Ciclo de 90 dias · 4 Fases</div>
               </div>
               <Link

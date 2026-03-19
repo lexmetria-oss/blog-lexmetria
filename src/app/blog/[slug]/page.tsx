@@ -145,7 +145,7 @@ export default function ArtigoPage({ params }: Props) {
             <p className="text-sm text-ivory/60 mb-4 leading-relaxed">
               Identifique as vulnerabilidades da sua Câmara antes que os órgãos de controle o façam.
             </p>
-            <div className="font-serif text-2xl font-bold text-gold mb-1">R$ 12.000</div>
+            <div className="font-serif text-2xl font-bold text-gold mb-1">A partir de R$ 12.000</div>
             <div className="font-mono text-xs text-ivory/40 mb-4">Câmaras Municipais · 90 dias</div>
             <Link
               href="/#contato"

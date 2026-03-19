@@ -51,7 +51,7 @@ export default function Footer() {
 
             <div className="border border-gold/20 p-4">
               <p className="font-mono text-xs text-gold/60 uppercase tracking-widest mb-1">Ciclo de 90 dias</p>
-              <p className="text-sm text-ivory/70">Câmaras Municipais a partir de <span className="text-gold font-semibold">R$ 12.000</span></p>
+              <p className="text-sm text-ivory/70">Câmaras Municipais <span className="text-gold font-semibold">A partir de R$ 12.000</span></p>
             </div>
           </div>
         </div>
